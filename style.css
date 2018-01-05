@@ -1,0 +1,91 @@
+html, body {
+  font-family: Helvetica, Serif;
+}
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+  font-variant: small-caps;
+  font-size: 18px;
+}
+
+h2  {
+  color: #f7edea;
+  background-color: #f74510;
+  padding: 15px;
+  font-size: 16px;
+  font-weight: 100;
+  width: 33%;
+  text-align: center;
+  box-shadow: 0px 0px 5px black;
+}
+
+/* Muuri */
+
+.grid {
+  position: relative;
+}
+
+.item {
+  display: block;
+  position: absolute;
+  line-height:200px;
+  margin: 10px;
+  z-index: 1;
+}
+
+.item.muuri-item-dragging {
+  z-index: 3;
+}
+.item.muuri-item-releasing {
+  z-index: 2;
+}
+.item.muuri-item-hidden {
+  z-index: 0;
+}
+
+.item-content{
+  position: relative;
+  cursor: pointer;
+}
+
+.item.muuri-item-dragging .item-content {
+  background-color: #29d9c9;
+  color: #1c1e1d;
+}
+
+.item.muuri-item-releasing .item-content {
+  background-color: #1c1e1d;
+  color: #29d9c9;
+}
+
+/* styles */
+.na{
+  width: 147px;
+  height: 145px;
+  border: 3px solid #21a3cc;
+  line-height: 145px;
+  text-align: center;
+  font-family: Helvetica;
+}
+
+.scub{
+  width: 150px;
+  height: 150px;
+  background-color: #21a3cc;
+  color: #0ffbe6;
+  text-align: center;
+  line-height: 150px;
+  text-align: center;
+  font-family: georgia;
+}
+
+.hero{
+  width: 200px;
+  height: 200px;
+  line-height: 200px;
+  text-align: center;
+  background-color: #dceaf5;
+  color: #1f78bd;
+  font-family: Serif;
+}

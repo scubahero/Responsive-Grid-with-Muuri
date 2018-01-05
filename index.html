@@ -8,6 +8,58 @@
 
   <body>
 
+    <div class="container">
+      <h2>Muuri Grid</h2>
+      <div class="grid">
+        <div class="item scub">
+          <div class="item-content">
+            s
+          </div>
+        </div>
+        <div class="item scub">
+          <div class="item-content">
+            c
+          </div>
+        </div>
+        <div class="item scub">
+          <div class="item-content">
+            u
+          </div>
+        </div>
+        <div class="item scub">
+          <div class="item-content">
+            b
+          </div>
+        </div>
+        <div class="item na">
+          <div class="item-content">
+            a
+          </div>
+        </div>
+        <div class="item hero">
+          <div class="item-content">
+            h
+          </div>
+        </div>
+        <div class="item hero">
+          <div class="item-content">
+            e
+          </div>
+        </div>
+        <div class="item hero">
+          <div class="item-content">
+            r
+          </div>
+        </div>
+        <div class="item hero">
+          <div class="item-content">
+            o
+          </div>
+        </div>
+      </div>
+    </div>
+
+
 
 
 
@@ -15,7 +67,17 @@
 <!--   CDN Source Web-Animatios-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/web-animations/2.3.1/web-animations.min.js"></script>
 <!--   Muuri & hammer-->
-    <script src="../bower_components/hammerjs/hammer.min.js"></script>
-    <script src="../bower_components/muuri/muuri.min.js"></script>
+    <script src="bower_components/hammerjs/hammer.min.js"></script>
+    <script src="bower_components/muuri/muuri.min.js"></script>
+
+<!--  Custom Script    -->
+    <script>
+
+      const grid = new Muuri('.grid', {
+        dragEnabled: true
+      });
+
+      grid;
+    </script>
   </body>
 </html>
